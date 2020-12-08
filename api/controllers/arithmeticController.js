@@ -11,6 +11,7 @@ exports.calculate = function(req, res) {
   });
 
   var operations = {
+    //use of + before variable name coerces JS to use numeric addition ratehr than string concat
     'add':      function(a,b) { return +a + +b },
     'subtract': function(a,b) { return a - b },
     'multiply': function(a,b) { return a * b },
